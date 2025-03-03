@@ -1,0 +1,7 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f34ffbc28e3c47ee85a5b4275df69afe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DIVIDER_TB_behav xil_defaultlib.DIVIDER_TB -log elaborate.log 
+Using 2 slave threads.
+ERROR: [VRFC 10-3006] 'C:/Users/joshu/Desktop/Year 1/DSD labs/CALCULATOR_PROJECT/CALCULATOR_PROJECT.sim/sim_1/behav/xsim/xsim.dir/xil_defaultlib/divider_tb.vdb' needs to be re-saved since 'xil_defaultlib.divider' changed
+ERROR: [VRFC 10-3032] 'xil_defaultlib.divider_tb' failed to restore
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.DIVIDER_TB in library work located at xsim.dir/work.

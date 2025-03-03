@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../CALCULATOR_PROJECT.srcs/sources_1/new/Addition.vhd" \
+"../../../../CALCULATOR_PROJECT.srcs/sources_1/new/Calculator.vhd" \
+"../../../../CALCULATOR_PROJECT.srcs/sources_1/new/eightBitFULLADDER.vhd" \
+"../../../../CALCULATOR_PROJECT.srcs/sources_1/new/NegativeDetector.vhd" \
+"../../../../CALCULATOR_PROJECT.srcs/sources_1/new/EightBitMultiplier.vhd" \
+"../../../../CALCULATOR_PROJECT.srcs/sources_1/new/EightBitDivision.vhd" \
+"../../../../CALCULATOR_PROJECT.srcs/sources_1/new/BCDtoSSD.vhd" \
+"../../../../CALCULATOR_PROJECT.srcs/sources_1/new/doubledabble1.vhd" \
+"../../../../CALCULATOR_PROJECT.srcs/sources_1/new/AnodeLoop.vhd" \
+"../../../../CALCULATOR_PROJECT.srcs/sources_1/new/Debouncer.vhd" \
+"../../../../CALCULATOR_PROJECT.srcs/sim_1/new/FinalTB.vhd" \
+
+# Do not sort compile order
+nosort

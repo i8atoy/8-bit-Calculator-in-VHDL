@@ -1,0 +1,87 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  5 17:04:59 2024
+| Host         : Joshua running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Calculator_control_sets_placed.rpt
+| Design       : Calculator
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    48 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      3 |            3 |
+|      4 |            1 |
+|      5 |            1 |
+|      7 |            6 |
+|      8 |            2 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              40 |           14 |
+| No           | No                    | Yes                    |              10 |            6 |
+| No           | Yes                   | No                     |              33 |            9 |
+| Yes          | No                    | No                     |              39 |           18 |
+| Yes          | No                    | Yes                    |             110 |           47 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+------------------------------------+------------------+------------------+----------------+
+|   Clock Signal   |            Enable Signal           | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------+------------------------------------+------------------+------------------+----------------+
+|  CLKDIVIDER/CLK  |                                    | ResetDeb/AR[0]   |                3 |              3 |
+|  Clock_IBUF_BUFG | confDeb/eqOp                       |                  |                1 |              3 |
+| ~Clock_IBUF_BUFG |                                    | ResetDeb/AR[0]   |                1 |              3 |
+|  Clock_IBUF_BUFG |                                    | ResetDeb/AR[0]   |                2 |              4 |
+|  Clock_IBUF_BUFG | confDeb/E[0]                       | ResetDeb/AR[0]   |                4 |              5 |
+|  Clock_IBUF_BUFG | DDInput[13]_i_1_n_0                | ResetDeb/AR[0]   |                3 |              7 |
+|  Clock_IBUF_BUFG | BtoBinary[6]_i_1_n_0               | ResetDeb/AR[0]   |                5 |              7 |
+|  Clock_IBUF_BUFG | input1_reg_n_0_[7]                 |                  |                3 |              7 |
+|  Clock_IBUF_BUFG | input2_reg_n_0_[7]                 |                  |                2 |              7 |
+|  Clock_IBUF_BUFG | StateLED_OBUF[0]                   | ResetDeb/AR[0]   |                6 |              7 |
+|  Clock_IBUF_BUFG | StateLED_OBUF[3]                   | ResetDeb/AR[0]   |                7 |              7 |
+|  Clock_IBUF_BUFG | FSM_onehot_CurrentState[1]_i_1_n_0 | ResetDeb/AR[0]   |                3 |              8 |
+|  Clock_IBUF_BUFG | StateLED_OBUF[2]                   | ResetDeb/AR[0]   |                5 |              8 |
+| ~Clock_IBUF_BUFG | doubleD/bcds_out_reg_next          | ResetDeb/AR[0]   |                6 |             20 |
+|  Clock_IBUF_BUFG | ResetDeb/E[0]                      |                  |               12 |             22 |
+|  Clock_IBUF_BUFG |                                    | CLKDIVIDER/clear |                9 |             33 |
+|  Clock_IBUF_BUFG |                                    |                  |               14 |             40 |
+| ~Clock_IBUF_BUFG | doubleD/shift_counter[4]_i_1_n_0   | ResetDeb/AR[0]   |                8 |             41 |
++------------------+------------------------------------+------------------+------------------+----------------+
+
+
